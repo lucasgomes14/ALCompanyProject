@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* layout */
+.first-section {
+    grid-area: first-section;
+}
+
+.content-about-us {
+    grid-area: second-section;
+}
+
+.content-service {
+    grid-area: third-section;
+}
+
+.content-feedback {
+    grid-area: fourth-section;
+}
+
+.content-contact {
+    grid-area: fifth-section;
+}
+
+.footer {
+    grid-area: last-section;
+}
+
+body {
+    background-color: #FFF;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas: "first-section" "second-section" "third-section" "fourth-section" "fifth-section" "last-section";
+}
+
+.first-section {
+    background-image: url(../images/fundoMain.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 67% 95%;
+    height: 900px;
+}
+
+.header {
+    width: 90%;
+    height: 85px;
+    margin: auto;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header img {
+    height: 50px;
+}
+
+.header nav {
+    width: 50%;
+}
+
+.header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header nav ul li {
+    list-style-type: none;
+}
+
+.header nav ul li a {
+    text-decoration: none;
+    color: #7D38C6;
+    font-weight: 600;
+    font-size: 25px;
+    font-family: "Kanit", sans-serif;
+    text-transform: lowercase;
+}
+
+.header nav ul li a:visited {
+    color: #7D38C6;
+}
+
+.content-main {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.main img {
+    height: 170px;
+}
+
+.text-main {
+    text-align: center;
+    font-family: "Kanit", sans-serif;
+    width: 50%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-main p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.text-main a {
+    text-decoration: none;
+    color: #FFF;
+    background-color: #7D38C6;
+    padding: 25px 29px;
+    border-radius: 71px;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
