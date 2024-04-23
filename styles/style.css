@@ -182,3 +182,64 @@ body {
     text-align: right;
     width: 400px;
 }
+
+.subtitles {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-size: 60px;
+    color: #7D38C6;
+    margin: 50px 0;
+}
+
+.content-service {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content-card-service {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    column-gap: 15px;
+}
+
+.card-service {
+    width: 330px;
+    color: #324473;
+    font-family: "Poppins";
+    border-radius: 30px;
+    box-shadow: 1px 1px 5px 0 #929191;
+}
+
+.card-service img {
+    width: 100%;
+}
+
+.text-card-service {
+    margin: 12px 25px 0;
+    text-align: left;
+}
+
+.card-service h3 {
+    font-weight: 900;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.card-service p {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.service-button {
+    background-color: #23B7AF;
+    color: #FFF;
+    margin-top: 60px;
+    padding: 30px 20px;
+    border-radius: 71px;
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+}
