@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 * {
     padding: 0;
@@ -252,7 +253,7 @@ body {
 }
 
 .content-card-feedback {
-    width: 60%;
+    width: 70%;
     font-family: "Poppins", sans-serif;
     display: grid;
     grid-template-columns: auto auto;
@@ -312,4 +313,144 @@ body {
 
 .stars img {
     height: 20px;
+}
+
+.content-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contacts {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    row-gap: 20px;
+}
+
+.cards-contact {
+    background-color: #ECECEC;
+    color: #333;
+    font-family: "Kanit", sans-serif;
+    font-size: 14px;
+    border-radius: 61px;
+}
+
+.margin-contacts {
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.cards-contact img {
+    height: 20px;
+    margin-right: 20px;
+}
+
+.footer {
+    margin-top: 100px;
+    background-color: #7D38C6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-footer {
+    width: 70%;
+}
+
+.content-footer {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 200;
+    color: #FFF;
+    margin: 40px 0 20px;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px #ffffff49;
+}
+
+.logo-footer {
+    height: 22px;
+    margin-bottom: 20px;
+}
+
+.al-company p {
+    width: 300px;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+.social-networks {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.social-networks a {
+    margin-right: 20px;
+}
+
+.social-networks img {
+    height: 35px;
+}
+
+.footer-header {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.list-footer {
+    list-style-type: none;
+    margin: 20px 0;
+}
+
+.newsletter p {
+    margin-bottom: 25px;
+}
+
+.email-footer {
+    border: solid 1px #FFF;
+    border-right: none;
+    background-color: transparent;
+    border-radius: 5px;
+    width: 190px;
+    height: 55px;
+    color: #FFF;
+    padding-left: 40px;
+}
+
+.email-footer::placeholder {
+    color: #FFF;
+    font-size: 16px;
+}
+
+.email-footer:focus {   
+    outline: none;
+    height: 55px;
+}
+
+.button-footer {
+    height: 57px;
+    width: 70px;
+    margin-left: -10px;
+    border: solid 1px #23B7AF;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #23B7AF;
+    color: #FFF;
+}
+
+.footer p {
+    padding-bottom: 15px;
+    color: #FFF;
+    font-family: "Inter", sans-serif;
+    font-size: 18;
+    font-weight: 300;
 }
