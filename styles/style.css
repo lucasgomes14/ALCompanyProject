@@ -562,9 +562,55 @@ body {
     
     /*-------------*/
 
+    .subtitles {
+        font-size: 45px;
+    }
+
     .content-service {
+        margin: 40px 0 80px;
+    }
+
+    .content-card-service {
+        grid-template-columns: auto;
+        grid-template-rows: repeat(5, auto);
+        column-gap: 0;
+        row-gap: 56px;
+    }
+
+    .card-service {
+        width: 185px;
+        transition: transform .3s;
+    }
+
+    .card-service:hover {
+        transform: scale(1.15);
+    }
+
+    .text-card-service {
+        text-align: center;
+    }
+
+    .text-card-service h3 {
+        font-size: 14px;
+        margin-bottom: 40px;
+    }
+
+    .text-card-service p {
         display: none;
     }
+
+    .service-button {
+        margin-top: 90px;
+        padding: 10px 10px;
+        font-size: 15px;
+    }
+
+    /*-------------*/
+
+
+
+
+
     .content-feedback {
         display: none;
     }
