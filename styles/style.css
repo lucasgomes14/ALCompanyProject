@@ -171,12 +171,12 @@ body {
 
 .about-us h2, .values h2 {
     font-weight: 900;
-    font-size: 40px;
+    font-size: 45px;
     margin-bottom: 20px;
 }
 
 .about-us p {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .about-us p, .values p {
@@ -473,7 +473,7 @@ body {
 
     .first-section {
         background-size: 200% 100%;
-        background-position-x: -550px;
+        background-position-x: -340px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -517,11 +517,51 @@ body {
         font-size: 16px;
     }
 
-
-    /*-------------*/
     .content-about-us {
-        display: none;
+        background-image: url(../images/fundo-section-2-phone.png);
+        background-size: 100% 100%;
+        height: 1633px;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
     }
+
+    .about-us {
+        height: 588px;
+    }
+
+    .about-us, .values {
+        margin: 0;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-us h2, .values h2 {
+        font-size: 40px;
+    }
+
+    .about-us p, .values p {
+        font-size: 15px;
+    }
+
+    .about-us img {
+        height: 200px;
+    }
+
+    .values {
+        height: 658px;
+        margin-bottom: 50px;
+    }
+
+
+    
+    /*-------------*/
+
     .content-service {
         display: none;
     }
