@@ -32,6 +32,11 @@
     grid-area: last-section;
 }
 
+html {
+    display: flex;
+    justify-content: center;
+}
+
 body {
     background-color: #FFF;
     min-height: 100vh;
@@ -39,6 +44,7 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, auto);
     grid-template-areas: "first-section" "second-section" "third-section" "fourth-section" "fifth-section" "last-section";
+    max-width: 1920px;
 }
 
 .first-section {
@@ -667,7 +673,6 @@ body {
         margin-right: 10px;
     }
 
-    /*-------------*/
     .text-footer {
         width: 80%;
         padding-bottom: 30px;
