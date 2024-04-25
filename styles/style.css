@@ -558,10 +558,6 @@ body {
         margin-bottom: 50px;
     }
 
-
-    
-    /*-------------*/
-
     .subtitles {
         font-size: 45px;
     }
@@ -604,16 +600,12 @@ body {
         padding: 10px 10px;
         font-size: 15px;
     }
-
     /*-------------*/
-
-
-
-
-
     .content-feedback {
         display: none;
     }
+
+    /*-------------*/
     .content-contact {
         display: none;
     }
