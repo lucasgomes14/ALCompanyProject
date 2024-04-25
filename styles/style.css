@@ -162,14 +162,16 @@ body {
     margin-bottom: 25px;
 }
 
-.about-us, .values {
+.about-us,
+.values {
     width: 500px;
     font-family: "Poppins", sans-serif;
     color: #FFF;
     text-align: left;
 }
 
-.about-us h2, .values h2 {
+.about-us h2,
+.values h2 {
     font-weight: 900;
     font-size: 45px;
     margin-bottom: 20px;
@@ -179,7 +181,8 @@ body {
     margin-bottom: 25px;
 }
 
-.about-us p, .values p {
+.about-us p,
+.values p {
     font-size: 14px;
     font-weight: bold;
 }
@@ -315,9 +318,9 @@ body {
 }
 
 .feedback-title {
-     margin-bottom: 10px;
-     font-size: 18px;
-     font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .feedback p {
@@ -449,7 +452,7 @@ body {
     font-size: 16px;
 }
 
-.email-footer:focus {   
+.email-footer:focus {
     outline: none;
     height: 55px;
 }
@@ -469,7 +472,7 @@ body {
     padding-bottom: 15px;
     color: #FFF;
     font-family: "Inter", sans-serif;
-    font-size: 18;
+    font-size: 16px;
     font-weight: 300;
 }
 
@@ -520,7 +523,7 @@ body {
     .text-main {
         height: 100%;
     }
-    
+
     .text-main p {
         margin-bottom: 48px;
     }
@@ -544,7 +547,8 @@ body {
         height: 588px;
     }
 
-    .about-us, .values {
+    .about-us,
+    .values {
         margin: 0;
         width: 80%;
         display: flex;
@@ -554,11 +558,13 @@ body {
         text-align: center;
     }
 
-    .about-us h2, .values h2 {
+    .about-us h2,
+    .values h2 {
         font-size: 40px;
     }
 
-    .about-us p, .values p {
+    .about-us p,
+    .values p {
         font-size: 15px;
     }
 
@@ -628,7 +634,7 @@ body {
     .feedback-img {
         height: 50px;
     }
-    
+
     .feedback-img img {
         height: 50px;
     }
@@ -662,7 +668,78 @@ body {
     }
 
     /*-------------*/
-    .footer {
-        display: none;
+    .text-footer {
+        width: 80%;
+        padding-bottom: 30px;
+    }
+
+    .content-footer {
+        margin: 40px auto 20px;
+        display: grid;
+        min-height: 100%;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: "first-footer first-footer" "second-footer second-footer" "third-footer last-footer";
+        row-gap: 20px;
+        padding: 0;
+    }
+
+    .al-company {
+        grid-area: first-footer;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .al-company p {
+        padding: 0;
+    }
+
+    .social-networks a {
+        margin-right: 10px;
+    }
+
+    .newsletter {
+        grid-area: second-footer;
+        width: 100%;
+    }
+
+    .email-footer {
+        width: 160px;
+        height: 45px
+    }
+
+    .email-footer:focus {
+        height: 45px;
+    }
+
+    .button-footer {
+        height: 47px;
+        width: 65px;
+    }
+
+    .resources {
+        grid-area: third-footer;
+        width: 100%;
+    }
+
+    .resources h3 {
+        padding-bottom: 10px;
+    }
+
+    .usefull-links {
+        grid-area: last-footer;
+        width: 100%;
+    }
+
+    .usefull-links h3 {
+        padding-bottom: 10px;
+    }
+
+    .footer p {
+        font-size: 14px;
+        padding: 30px 0 20px;
     }
 }
