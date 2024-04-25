@@ -482,7 +482,7 @@ body {
 
     .first-section {
         background-size: 200% 100%;
-        background-position-x: -340px;
+        background-position-x: -550px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -515,6 +515,10 @@ body {
     .logo-phone {
         display: block;
         margin: 127px 0 171px;
+    }
+
+    .text-main {
+        height: 100%;
     }
     
     .text-main p {
@@ -568,7 +572,7 @@ body {
     }
 
     .subtitles {
-        font-size: 45px;
+        font-size: 30px;
     }
 
     .content-service {
@@ -639,11 +643,25 @@ body {
         overflow: hidden;
     }
 
+    .content-contact {
+        width: 100%;
+    }
+
+    .contacts {
+        width: 80%;
+        margin-bottom: 80px;
+    }
+
+    .cards-contact {
+        font-size: 12px;
+    }
+
+    .cards-contact img {
+        height: 15px;
+        margin-right: 10px;
+    }
 
     /*-------------*/
-    .content-contact {
-        display: none;
-    }
     .footer {
         display: none;
     }
