@@ -7,31 +7,6 @@
     margin: 0;
 }
 
-/* layout */
-.first-section {
-    grid-area: first-section;
-}
-
-.content-about-us {
-    grid-area: second-section;
-}
-
-.content-service {
-    grid-area: third-section;
-}
-
-.content-feedback {
-    grid-area: fourth-section;
-}
-
-.content-contact {
-    grid-area: fifth-section;
-}
-
-.footer {
-    grid-area: last-section;
-}
-
 html {
     display: flex;
     justify-content: center;
@@ -40,11 +15,11 @@ html {
 body {
     background-color: #FFF;
     min-height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, auto);
-    grid-template-areas: "first-section" "second-section" "third-section" "fourth-section" "fifth-section" "last-section";
+    width: 100%;
     max-width: 1920px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .first-section {
@@ -53,13 +28,13 @@ body {
     background-position: top left;
     background-size: 67% 95%;
     height: 900px;
+    width: 100%;
 }
 
 .header {
     width: 90%;
     height: 85px;
     margin: auto;
-    margin-top: 15px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -158,10 +133,17 @@ body {
     background-repeat: no-repeat;
     background-size: 100% 100%;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 650px;
+}
+
+.second-section {
+    display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    height: 650px;
+    width: 90%;
 }
 
 .about-us {
@@ -215,20 +197,22 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 .content-card-service {
+    width: 90%;
     display: grid;
-    grid-template-columns: repeat(5, auto);
+    grid-template-columns: repeat(5, 1fr);
     column-gap: 15px;
 }
 
 .card-service {
-    width: 330px;
     color: #324473;
     font-family: "Poppins";
     border-radius: 30px;
     box-shadow: 1px 1px 5px 0 #929191;
+    min-width: 120px;
 }
 
 .card-service img {
@@ -250,6 +234,9 @@ body {
     font-size: 14px;
     font-weight: 400;
     margin-bottom: 25px;
+    max-height: 169px;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .service-button {
@@ -332,6 +319,9 @@ body {
 .feedback p {
     font-size: 14px;
     font-weight: 400;
+    max-height: 143px;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .stars {
@@ -482,6 +472,10 @@ body {
     font-weight: 300;
 }
 
+.resources, .usefull-links, .al-company {
+    margin-right: 15px;
+}
+
 /* phone */
 
 @media screen and (max-width: 767px) {
@@ -542,11 +536,18 @@ body {
     .content-about-us {
         background-image: url(../images/fundo-section-2-phone.png);
         background-size: 100% 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         height: 1633px;
+    }
+
+    .second-section {
         width: 100%;
+        height: 100%;
         flex-direction: column;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-around;
     }
 
     .about-us {
@@ -559,23 +560,25 @@ body {
         width: 80%;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         text-align: center;
     }
 
     .about-us h2,
     .values h2 {
-        font-size: 40px;
+        font-size: 50px;
+        margin-bottom: 70px;
     }
 
     .about-us p,
     .values p {
         font-size: 15px;
+        line-height: 25px;
     }
 
     .about-us img {
-        height: 200px;
+        height: 170px;
     }
 
     .values {
@@ -588,14 +591,16 @@ body {
     }
 
     .content-service {
-        margin: 40px 0 80px;
+        margin: 40px 0 20px;
     }
 
     .content-card-service {
+        width: auto;
         grid-template-columns: auto;
         grid-template-rows: repeat(5, auto);
         column-gap: 0;
         row-gap: 56px;
+        max-height: none;
     }
 
     .card-service {
@@ -621,14 +626,14 @@ body {
     }
 
     .service-button {
-        margin-top: 90px;
+        margin-top: 60px;
         padding: 10px 10px;
         font-size: 15px;
     }
 
     .content-feedback {
         width: 100%;
-        margin-bottom: 80px;
+        margin-bottom: 20px;
     }
 
     .content-card-feedback {
@@ -652,7 +657,8 @@ body {
     .feedback p {
         font-size: 12px;
         height: 56px;
-        overflow: hidden;
+        overflow-y: auto;
+        overflow-x: hidden;
     }
 
     .content-contact {
@@ -682,8 +688,8 @@ body {
         margin: 40px auto 20px;
         display: grid;
         min-height: 100%;
-        grid-template-columns: auto auto;
-        grid-template-rows: auto auto auto;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
         grid-template-areas: "first-footer first-footer" "second-footer second-footer" "third-footer last-footer";
         row-gap: 20px;
         padding: 0;
@@ -691,6 +697,7 @@ body {
 
     .al-company {
         grid-area: first-footer;
+        margin: 0;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -700,6 +707,7 @@ body {
 
     .al-company p {
         padding: 0;
+        width: 100%;
     }
 
     .social-networks a {
@@ -708,12 +716,21 @@ body {
 
     .newsletter {
         grid-area: second-footer;
+        width: 90%;
+    }
+
+    .newsletter .paragraph-Newsletter, .newsletter .footer-header {
+        width: 90%;
+    }
+
+    form {
         width: 100%;
     }
 
     .email-footer {
-        width: 160px;
-        height: 45px
+        width: 150px;
+        height: 45px;
+        padding-left: 15px;
     }
 
     .email-footer:focus {
@@ -722,7 +739,7 @@ body {
 
     .button-footer {
         height: 47px;
-        width: 65px;
+        width: 58px;
     }
 
     .resources {
@@ -746,5 +763,132 @@ body {
     .footer p {
         font-size: 14px;
         padding: 30px 0 20px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    .first-section {
+        height: 750px;
+    }
+    
+    .header img {
+        height: 40px;
+    }
+    
+    .header nav ul li a {
+        font-size: 20px;
+    }
+
+    .main img {
+        height: 130px;
+    }
+
+    .text-main p {
+        font-size: 17px;
+    }
+
+    .text-main a {
+        font-size: 17px;
+        padding: 20px 26px;
+    }
+
+    .about-us {
+        margin-right: 25px;
+    }
+
+    .about-us h2, .values h2 {
+        font-size: 40px;
+    }
+
+    .about-us p, .values p {
+        font-size: 12px;
+    }
+
+    .about-us img {
+        height: 220px;
+    }
+
+    .subtitles {
+        font-size: 50px;
+    }
+
+    .card-service h3 {
+        font-size: 12px;
+    }
+
+    .card-service p {
+        font-size: 10px;
+    }
+
+    .service-button {
+        font-size: 20px;
+        padding: 25px 15px;
+    }
+
+    .feedback-img {
+        height: 65px;
+    }
+
+    .feedback-img img {
+        height: 65px;
+    }
+
+    .feedback-title {
+        font-size: 15px;
+    }
+
+    .feedback p {
+        font-size: 13px;
+    }
+
+    .stars img {
+        height: 16px;
+    }
+
+    .text-footer {
+        width: 90%;
+    }
+
+    .logo-footer {
+        height: 18px;
+    }
+
+    .content-footer {
+        font-size: 12px;
+    }
+
+    .footer p {
+        font-size: 13px;
+        width: 250px;
+    }
+
+    .footer .paragraph-Newsletter {
+        width: 130px;
+    }
+
+    .email-footer {
+        width: 110px;
+        height: 30px;
+        padding-left: 10px;
+        font-size: 12px;
+    }
+
+    .email-footer:focus {
+        height: 30px;
+    }
+
+    .email-footer::placeholder {
+        font-size: 12px;
+    }
+
+    .button-footer {
+        height: 33px;
+        width: 40px;
+        margin-left: -11px;
+        font-size: 12px;
+    }
+
+    .footer p {
+        width: 270px;
     }
 }
